@@ -4,13 +4,8 @@ s2=s1.lower()
 s3=set(s2)
 l=[]
 for i in s3:
-    count=0
-    for j in s2:
-        if i==j:
-            count+=1
-    if count>1:
-        pass
-    else:
+    if i in s2:
         l.append(i)
 l.sort()
-print(''.join(l))
+for k in l:
+    print(k,end='')
